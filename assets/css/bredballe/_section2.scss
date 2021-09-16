@@ -1,0 +1,56 @@
+#bredballe-section2 {
+    h3 {
+        font-family: "Montserrat Bold" !important;
+    }
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16.3%;
+    padding-bottom: 2%;
+    @media screen and(max-width:767px) {
+        padding: 0 5%;
+    }
+    .content-section2 {
+        width: 38%;
+        margin: 3% 0 0 0;
+        h3,
+        p {
+            margin: 3.5% 0;
+            position: relative;
+        }
+        p {
+            display: flex;
+            align-items: baseline;
+        }
+    }
+    .images-section2 {
+        width: 58%;
+        position: relative;
+        z-index: -1;
+        img {
+            width: 100%;
+            position: relative;
+            top: -21%;
+            z-index: -1;
+        }
+        p {
+            position: absolute;
+            bottom: 5%;
+            border-top: solid #c9cacc 1px;
+            width: 100%;
+            padding-top: 2%;
+            font-family: "Montserrat Medium" !important;
+        }
+    }
+    // REPONISVE
+    @media screen and(max-width:1020px) {
+        flex-direction: column;
+        align-items: flex-start;
+        .content-section2,
+        .images-section2 {
+            width: 100%;
+        }
+        .images-section2 p {
+            position: relative;
+        }
+    }
+}

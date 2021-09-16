@@ -1,0 +1,29 @@
+#home-section1 {
+    .carousel {
+        .carousel-inner {
+            max-height: 710px;
+        }
+        .button-section1 {
+            z-index: 2222;
+            position: absolute;
+            display: block;
+            position: absolute;
+            bottom: 9%;
+            transform: translateX(-50%);
+            left: 50%;
+            :hover {
+                .cls-1,
+                .cls-2 {
+                    fill: red !important;
+                }
+            }
+            svg {
+                transform: rotateZ(90deg);
+                .cls-1,
+                .cls-2 {
+                    fill: #ffffff !important;
+                }
+            }
+        }
+    }
+}

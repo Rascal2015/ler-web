@@ -1,0 +1,98 @@
+#header {
+    margin: 0 auto;
+    font-family:"Montserrat Bold";
+    display: flex;
+    justify-content: space-between;
+    // padding: 1% 16.3%;
+    padding:1% 0;
+    position: relative;
+    .container{
+        display: flex;
+    }
+    #logo {
+        cursor: pointer;
+        img {
+            max-width: 5rem;
+        }
+    }
+    #menu {
+        flex: 1;
+        align-self: center;
+        margin-left: 4.4%;
+        a {
+            color: $color-text;
+            margin: 0 1%;
+            &.active {
+                color:$grey !important;
+            }
+        }
+    }
+    #header-right {
+        align-self: center;
+        span {
+            color: $grey;
+            letter-spacing: 1px;
+        }
+        span:nth-child(1) {
+            font-family: "Montserrat Regular";
+        }
+        span:nth-child(2) {
+            margin-left: 1.5rem;
+        }
+    }
+    #menu-reponsive {
+        display: none;
+    }
+    // REPONSIVE
+}
+@media screen and(max-width:760px) {
+    #header {
+        flex-direction: column;
+        padding: 1% 0;
+        align-items: center;
+        #menu {
+            margin-left: 0;
+            nav {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                height: 100vh;
+                background: blue !important;
+                left: -120%;
+                top: 100%;
+                position: absolute;
+                transition: 0.5s;
+                z-index: 2222222;
+                justify-content: flex-start;
+                padding-top: 10%;
+                a {
+                    margin: 3% 20% !important;
+                    border: solid #ffffff 2px;
+                }
+            }
+        }
+        #menu-reponsive {
+            display: block;
+            font-size: 30px;
+            align-self: flex-end;
+            z-index: 99999999999999999999;
+        }
+    }
+}
+@media screen and(max-width:874px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        #menu {
+            width: 100%;
+        }
+        nav {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+.animate-menu {
+    left: 0 !important;
+    transition: 0.5s;
+}

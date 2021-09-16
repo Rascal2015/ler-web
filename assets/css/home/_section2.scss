@@ -1,0 +1,147 @@
+#home-section2 {
+    font-family: "Montserrat Bold";
+    display: flex;
+    background: $bg-blue;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2% 0 0 0;
+    h6,
+    a {
+        font-size: 1.5rem;
+    }
+    h6 {
+        color: $grey;
+    }
+    a {
+        color: $bold-red;
+    }
+    .text-section2 {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-right: 2%;
+        margin-top: 2%;
+        align-self: baseline;
+        h6 {
+            color: $bold-blue;
+        }
+        p {
+            margin: 4% 0;
+        }
+        .play-vd {
+            width: 7rem;
+            align-self: flex-end;
+            position: relative;
+            display: block;
+            &:before {
+                position: absolute;
+                content: "";
+                width: 620px;
+                height: 1px;
+                background: $bold-blue;
+                top: 50%;
+                right: 70%;
+            }
+            svg {
+                #Layer_1-2 > rect {
+                    display: none;
+                }
+                .cls-1,
+                .cls-2 {
+                    fill: #34868c !important;
+                }
+            }
+        }
+        h1 {
+            font-size: 2.4rem;
+        }
+        p {
+            font-family: "Montserrat Regular";
+        }
+        h6:nth-child(4) {
+            font-family: "Montserrat Medium";
+        }
+    }
+    .slick-prev {
+        z-index: 222;
+        left: 0;
+        &:before {
+            content: "\f0a8" !important;
+        }
+    }
+    .slick-next {
+        z-index: 222;
+        right: 0;
+        &:before {
+            content: "\f0a9" !important;
+        }
+    }
+    .slick-list {
+        padding: 0 !important;
+    }
+    .slick-next:before,
+    .slick-prev:before {
+        font-family: "Font Awesome 5 Free" !important;
+        font-weight: 900 !important;
+        color: $bold-red;
+        font-size: 20px;
+    }
+    .card {
+        // width: 100%;
+        margin: 0 1rem;
+        border-radius: 10px !important;
+        .card-body {
+            padding: 4% 9%;
+            position: relative;
+            overflow: hidden;
+            &:before {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 33%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: $bold-red;
+                bottom: 0;
+            }
+            .card-link {
+                margin-top: 10%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        h6,
+        a {
+            text-transform: uppercase;
+        }
+        img {
+            width: 32rem;
+            height: 160px;
+        }
+    }
+
+    // REPONSIVE SECTION2
+    @media screen and (max-width: 1000px) {
+        h6,
+        a {
+            font-size: 1rem !important;
+        }
+    }
+    @media screen and(max-width:767px) {
+        flex-direction: column;
+        align-items: center;
+        .text-section2 {
+            max-width: 32rem;
+            width: 100% !important;
+        }
+        .variable-width {
+            width: 100% !important;
+        }
+    }
+    @media screen and(max-width:522px) {
+        .card img {
+            width: 100% !important;
+        }
+    }
+}

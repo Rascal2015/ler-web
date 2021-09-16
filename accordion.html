@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ACCORDION</title>
+        <!--   all css general -->
+        <link rel="SHORTCUT ICON" href="assets/images/ler_ejendomme_logo.png" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+        <!-- end css general -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+            integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <div id="header">
+           <div class="container">
+                <div id="logo">
+                    <a href="index.html"><img src="assets/images/ler_ejendomme_logo.png"alt="" /></a>
+                </div>
+                <div id="menu">
+                    <nav class="nav">
+                        <a class="nav-link active" href="index.html">Forside</a>
+                        <a class="nav-link" href="lejemal.html">Lejemål</a>
+                        <a class="nav-link" href="om.html">Om</a>
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </nav>
+                </div>
+
+                <div id="header-right">
+                    <span>LER Ejendomme</span>
+                    <span>27 21 80 04</span>
+                </div>
+
+           </div>
+            <div id="menu-reponsive">
+                    <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- detail-section1 -->
+        <div id="detail-section1" class="repon-padding">
+            <h1>Nørrebrogade 6</h1>
+            <div class="content-section1">
+                <!-- left-content -->
+                <div class="left-content">
+                    <div class="head-left">
+                        <div class="status">
+                            <span class="bol">Boliger</span>
+                            <span class="erh">Erhverv</span>
+                            <div class="check">
+                                <input type="checkbox" id="vehicle1" value="" />
+                                <label for="vehicle1"> Vis kun ledige </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-left">
+                        <div class="head">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Enhed</th>
+                                        <th>Kvm.</th>
+                                        <th>Pr. md.</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <!-- accordion-container -->
+                        <div class="accordion-container" data-name="true">
+                            <!-- ac -->
+                            <div class="ac show">
+                                <div class="row-tab ac-header bottom">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>2 tv</td>
+                                                <td>121</td>
+                                                <td>9.450 kr</td>
+                                                <td class="color-bg">Ledig</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="ac-trigger" href="#"><span>infor</span><span class="dont-rotate rotate">></span></a>
+                                </div>
+                                <div class="ac-panel">
+                                    <div class="component1">
+                                        <h2>Nørrebrogade 6, 2. tv</h2>
+                                        <div class="component-right">
+                                            <h3>Ledig</h3>
+                                            <p><span>Kvadratmeter</span><span>121</span></p>
+                                            <p><span>Værelser</span><span>3</span></p>
+                                            <p><span>Lejepris pr. md.</span><span>9.450kr</span></p>
+                                            <p style="margin-bottom: 5%;"><span>Depositum</span><span>28355kr</span></p>
+                                            <p>
+                                                <span>Hems</span><span><i class="fas fa-check"></i></span>
+                                            </p>
+                                            <p>
+                                                <span>Gulvvarme</span><span><i class="fas fa-check"></i></span>
+                                            </p>
+                                            <p>
+                                                <span>Internet, 10mb</span><span><i class="fas fa-check"></i></span>
+                                            </p>
+                                        </div>
+                                        <div class="component-left">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad<span> minim veniam </span>, quis nostrud exercitation
+                                                ullamco lab oris nisi ut aliquip ex ea.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="component2">
+                                        <h3>DONTHING</h3>
+                                        <div id="carouselExampleInterval-1" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <a href="assets/images/crs1.png" data-fancybox="gallery-1" data-caption="Caption #2">
+                                                        <img src="assets/images/crs1.png" class="d-block w-100" alt="" />
+                                                    </a>
+                                                    <div class="img-caption">
+                                                        <span>2 af 2</span>
+                                                        <span>Lorem ipsum</span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <a href="assets/images/crs1.png" data-fancybox="gallery-1" data-caption="Caption #2">
+                                                        <img src="assets/images/crs1.png" class="d-block w-100" alt="" />
+                                                    </a>
+                                                    <div class="img-caption">
+                                                        <span>1 af 2</span>
+                                                        <span>Lorem ipsum</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleInterval-1" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleInterval-1" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <div class="button-fancybox">
+                                                <img class="button-crs button-pre" src="assets/images/next_prev_image.png" alt="" />
+                                                <div class="ruler"></div>
+                                                <img class="button-crs button-next" src="assets/images/next_prev_image.png" alt="" />
+                                                <img class="button-crs button-zoom" src="assets/images/enlarge_image.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <h3>DONTHING</h3>
+                                        <div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel" style="margin: 4% 0 0 0;">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <a href="assets/images/Untitled-1.png" data-fancybox="gallery-2" data-caption="Caption #2">
+                                                        <img src="assets/images/Untitled-1.png" class="img-fluid d-block w-100" alt="" style="max-height: 347px;" />
+                                                    </a>
+                                                    <div class="img-caption" style="margin-top: 7%;">
+                                                        <span>2 af 2</span>
+                                                        <span>Lorem ipsum</span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <a href="assets/images/Untitled-1.png" data-fancybox="gallery-2" data-caption="Caption #2">
+                                                        <img src="assets/images/Untitled-1.png" class="img-fluid d-block w-100" alt="" style="max-height: 347px;" />
+                                                    </a>
+                                                    <div class="img-caption" style="margin-top: 7%;">
+                                                        <span>2 af 2</span>
+                                                        <span>Lorem ipsum</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleControls-2" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls-2" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            <div class="button-fancybox">
+                                                <img class="button-crs button-pre" src="assets/images/next_prev_image.png" alt="" />
+                                                <div class="ruler"></div>
+                                                <img class="button-crs button-next" src="assets/images/next_prev_image.png" alt="" />
+                                                <img class="button-crs button-zoom" src="assets/images/enlarge_image.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end ac -->
+                            <!-- ac -->
+                            <div class="ac">
+                                <div class="row-tab ac-header">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>1 th</td>
+                                                <td>131</td>
+                                                <td>9.250 kr</td>
+                                                <td class="color-bg">Ledig</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="ac-trigger" href="#"><span>infor</span><span class="dont-rotate">></span></a>
+                                </div>
+                                <div class="ac-panel">
+                                    <h1>asadasdadasda</h1>
+                                </div>
+                            </div>
+                            <!-- end ac -->
+                            <!-- ac -->
+                            <div class="ac">
+                                <div class="row-tab ac-header">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>1 mf</td>
+                                                <td>72.5</td>
+                                                <td>6.750kr</td>
+                                                <td class="color-bg dont-free">Ledig</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="ac-trigger" href="#"><span>infor</span><span class="dont-rotate">></span></a>
+                                </div>
+                                <div class="ac-panel">
+                                    <h1>asadasdadasda</h1>
+                                </div>
+                            </div>
+                            <!-- end ac -->
+                        </div>
+                        <!-- end accordion-container -->
+                    </div>
+                </div>
+                <!-- end lef -->
+                <!-- right-content -->
+                <div class="right-content">
+                    <div class="cardvisit">
+                        <div class="top-cardvisit">
+                            <img src="assets/images/piece_dark_grey_cut.png" alt="" />
+                        </div>
+                        <div class="bot-cardvisit">
+                            <img src="assets/images/piece_light_grey_cut.png" alt="" />
+                        </div>
+                        <div class="text-cardvisit">
+                            <h3>
+                                Kontakt os for <br />
+                                en fremvisning
+                            </h3>
+                            <p>20 27 11 11</p>
+                            <a href="#">ler@ler-ejendomme.dk</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end right-content -->
+            </div>
+        </div>
+        <!-- end section1 -->
+        <!-- detail-section2 -->
+        <div id="detail-section2" class="repon-padding">
+            <div class="content-section2">
+                <div class="left-section2">
+                    <h3>Du/I har nu mulighed for at leje en attraktivt beliggende lejlighed centralt i Vejle.</h3>
+                    <p>Lejligheden har ikke blot en stor solrig altan med en smuk udsigt, men byder også på:</p>
+                    <p class="list">
+                        <span>Åbent køkken-alrum og stuemiljø med et godt lysindfald</span>
+                    </p>
+                    <p class="list">
+                        Nyt køkken i hvide elementer
+                    </p>
+                    <p class="list">
+                        <span>ÅVærelse(r) med faste skabe</span>
+                    </p>
+                    <p class="list">
+                        <span>Åbent køkken-alrum og stuemiljø med et godt lysindfald</span>
+                    </p>
+                    <p class="list">
+                        <span>Hyggelige detaljer som synlige spær og store vinduespartier</span>
+                    </p>
+                    <p class="list">
+                        <span>Udnyttet 1. sal med ”2 værelser” (ikke reg. beboelse) i 2017</span>
+                    </p>
+                    <p class="list">
+                        <span>Eget kælderrum</span>
+                    </p>
+                </div>
+                <div class="right-section2">
+                    <img src="assets/images/section2-du.png" alt="" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+            <div class="map">
+                <div class="content-map">
+                    <h3>Nørrebrogade 6, 7100 Vejle</h3>
+                    <p>
+                        Der er masser af muligheder for shopping lige i nærheden, med Nørretorv et minuts gang fra ejendommen.
+                    </p>
+                </div>
+                <div class="image-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.550089231672!2d106.79198281526064!3d10.845701660875806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527158a0a5b81%3A0xf45c5d34ac580517!2zUGjDom4gaGnhu4d1IFRyxrDhu51uZyDEkOG6oWkgaOG7jWMgR1RWVCB04bqhaSBUcC4gSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1629472535154!5m2!1svi!2s"
+                        width="600"
+                        height="450"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="assets/images/carusel.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img class="img-fluid" src="assets/images/carusel.png" alt="" />
+                        </a>
+                        <div class="img-caption">
+                            <span>2 af 8</span>
+                            <span>
+                                Boligerne ligger nær den, om sommeren, <br />
+                                populære Albuen Strand.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/images/carusel.png" data-fancybox="gallery" data-caption="Caption #1">
+                            <img class="img-fluid" src="assets/images/carusel.png" alt="" />
+                        </a>
+                        <div class="img-caption">
+                            <span>2 af 8</span>
+                            <span>
+                                Boligerne ligger nær den, om sommeren,<br />
+                                populære Albuen Strand.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <div class="button-fancybox">
+                    <img class="button-crs button-pre" src="assets/images/next_prev_image.png" alt="" />
+                    <div class="ruler"></div>
+                    <img class="button-crs button-next" src="assets/images/next_prev_image.png" alt="" />
+                    <img class="button-crs button-zoom" src="assets/images/enlarge_image.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <!-- end detail-section2 -->
+        <!-- detail-section3 -->
+        <div id="detail-section3" class="repon-padding">
+            <div class="top-content-section3">
+                <h2>
+                    Lejligheden er derudover del af en <br />
+                    skøn forening, som tilbyder
+                </h2>
+                <p class="list">
+                    <span>Fælles parkering til gæster</span>
+                </p>
+                <p class="list">
+                    <span>Fælles gårdmiljø</span>
+                </p>
+                <p class="list">
+                    <span>Mulighed for at leje værelser, hvor dine/jeres gæster kan overnatte</span>
+                </p>
+                <p class="list">
+                    <span>Festlokale m. køkkenfaciliteter</span>
+                </p>
+            </div>
+            <div class="bottom-content-section3">
+                <div class="box1">
+                    <h2>Nærområdet</h2>
+                    <p>
+                        Populære Bredballe er et naturskønt område, som byder på gode indkøbsmuligheder i Bredballe Centret og god busforbindelse til Vejle centrum.
+                    </p>
+                    <p>
+                        Området er særdeles børnevenligt, og der er kort afstand til gode skoler, daginstitutioner, fritidsaktiviteter og natur.
+                    </p>
+                    <p>
+                        Du/I kan nemt udforske nærområdet til fods via rolige stisystemer eller gå på opdagelse i naturen omkring Trædenlund skov og Vejle Fjord. Har du/I derudover ærinder eller forretninger i resten af landet, har du/I
+                        hurtig og nem adgang til det danske motorvejsnet.
+                    </p>
+                </div>
+                <div class="cardvisit">
+                    <div class="top-cardvisit">
+                        <img src="assets/images/piece_dark_grey_cut.png" alt="" />
+                    </div>
+                    <div class="bot-cardvisit">
+                        <img src="assets/images/piece_light_grey_cut.png" alt="" />
+                    </div>
+                    <div class="text-cardvisit">
+                        <h2>
+                            Lyder denne lejebolig som <br />
+                            noget for dig?
+                        </h2>
+                        <h2>
+                            Kontakt os for en fremvisning
+                        </h2>
+                        <p>(+45) 20 27 11 11</p>
+                        <a href="#">ler@ler-ejendomme.dk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end detail-section3 -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="content-footer">
+                <img src="assets/images/ler_ejendomme_logo.png" alt="" />
+                <div class="text-footer">
+                    <div class="box">
+                        <h2>LER Ejendomme</h2>
+                        <h6>Vi administrerer smukke</h6>
+                        <h6>ejeboliger i Vejle og omegn.</h6>
+                    </div>
+                    <div class="box">
+                        <h6>LER Ejendomme ApS</h6>
+                        <h6>Vedelsgade 23</h6>
+                        <h6>7100 Vejle</h6>
+                        <h6>ler@ler-ejendomme.dk</h6>
+                    </div>
+                    <div class="box">
+                        <h6>27 21 80 04</h6>
+                        <h6>Mandag - fredag kl. 8:00 - 15:00</h6>
+                    </div>
+                </div>
+            </div>
+            <p>Copyright © <span>LER Ejendomme ApS </span>All Rights Reserved.</p>
+        </div>
+        <!-- end footer -->
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+            integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- end js -->
+    </body>
+</html>

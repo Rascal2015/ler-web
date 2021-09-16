@@ -1,0 +1,44 @@
+#om-section2 {
+    .content-section2 {
+        padding: 4% 16.3%;
+        display: flex;
+        justify-content: space-between;
+        .left-text,
+        .right-text {
+            width: 48%;
+        }
+        .right-text {
+            padding-top: 6%;
+            p {
+                margin-bottom: 10%;
+                padding-left: 5%;
+            }
+            .image-text {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                &:before {
+                    position: absolute;
+                    content: "";
+                    top: -1%;
+                    left: 7%;
+                    width: 0;
+                    height: 0;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-top: 20px solid white;
+                }
+            }
+        }
+        // REPOSIVE
+        @media screen and(max-width:767px) {
+            flex-direction: column;
+            align-items: center;
+            .right-text,
+            .left-text {
+                width: 100%;
+            }
+        }
+    }
+}

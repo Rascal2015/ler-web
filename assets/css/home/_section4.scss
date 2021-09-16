@@ -1,0 +1,38 @@
+#home-section4 {
+    position: relative;
+    overflow: hidden;
+    max-height: 709px;
+    img {
+        width: 100%;
+    }
+    .text-image {
+        position: absolute;
+        top: 10%;
+        p {
+            white-space: nowrap;
+            font-family: "Montserrat Medium";
+            margin: 7% 0;
+        }
+        h2 {
+            color: #ffffff;
+            white-space: pre;
+            font-family: "Montserrat Bold";
+        }
+    }
+    @media screen and(max-width:766px) {
+        a {
+            font-size: 1rem !important;
+        }
+        .text-section4 {
+            transform: translateX(-50%) !important;
+            left: 50% !important;
+            text-align: center;
+        }
+    }
+    @media screen and(max-width:374px) {
+        .text-section4 {
+            top: 0 !important;
+            left: 40% !important;
+        }
+    }
+}

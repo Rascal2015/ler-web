@@ -1,0 +1,132 @@
+#lejemal-main-content {
+    background: $bg-blue;
+    padding-bottom:5%;
+    overflow: hidden;
+    .title-page {
+        .content-title {
+            padding: 3% 0 1% 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: "";
+                width: 1000%;
+                height: 1px;
+                background: $border;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            p {
+                color: $bold-blue;
+                font-family: "Montserrat Bold";
+                span {
+                    font-family: "Montserrat Regular";
+                }
+            }
+        }
+    }
+    #card-page {
+        .content-card-page {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 4%;
+            .card {
+                font-family: "Montserrat Bold";
+                width: 48%;
+                margin-bottom: 3%;
+                .card-img {
+                    height: 320px;
+                    max-height: 320px;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    span {
+                        position: absolute;
+                        color: $bold-blue;
+                        bottom: 20%;
+                        left: 5%;
+                    }
+                }
+                span {
+                    font-size: 1.5rem;
+                    color: $grey;
+                    text-transform: uppercase;
+                }
+                a {
+                    color: $color-text;
+                }
+                a,
+                span {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-family: "Montserrat Regular";
+                }
+                .card-body {
+                    padding: 5%;
+                }
+                .card-title {
+                    margin-bottom: 3%;
+                }
+                .card-title,
+                .card-link {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 0;
+                    align-items: center;
+                }
+                .card-link:nth-child(3) {
+                    margin: 6% 0;
+                }
+                a.status {
+                    color: #b32017;
+                    border: solid #b32017 1px;
+                    width: 47%;
+                    padding: 2% 6%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    &.none {
+                        border: solid $color-text 1px;
+                        color: $color-text;
+                    }
+                }
+                .card-link a i {
+                    white-space: pre;
+                    font-style: normal;
+                }
+                .card-text {
+                    a {
+                        color: #b32017;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and(max-width:1000px) {
+        a,
+        span {
+            font-size: 1rem !important;
+        }
+    }
+    @media screen and(max-width:767px) {
+        .content-title {
+            flex-direction: column;
+            align-items: center !important;
+        }
+        .content-card-page {
+            flex-direction: column;
+            align-items: center !important;
+            .card {
+                width: 100% !important;
+            }
+        }
+    }
+}

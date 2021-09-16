@@ -1,0 +1,81 @@
+#bredballe-section1 {
+    background: #e5f0ef;
+    padding: 1% 16.3% 2.5% 16.3%;
+    overflow: hidden;
+    @media screen and(max-width:767px) {
+        padding: 0 5%;
+    }
+    .content-section1 {
+        .title {
+            font-family: "Montserrat Regular";
+            .content-title {
+                display: flex;
+                padding: 2% 0;
+                h1,
+                p {
+                    margin: 0;
+                    align-self: flex-end;
+                }
+                p {
+                    font-size: 1.7rem;
+                    align-self: center;
+                    margin-left: 1%;
+                }
+            }
+        }
+        .infor-section1 {
+            img {
+                background: #e5f0ef;
+            }
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            &:before {
+                position: absolute;
+                top: 0;
+                width: 1000000000000px;
+                height: 1px;
+                content: "";
+                left: 50%;
+                transform: translateX(-50%);
+                background: #c9cacc;
+            }
+            .box1 {
+                a {
+                    margin-top: 10%;
+                }
+                padding: 4% 0 1% 0;
+                width: 31%;
+                h2 {
+                    font-family: "Montserrat Bold";
+                }
+                h2 {
+                    @media screen and(max-width:1200px) and(min-width:768px) {
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .cardvisit{
+                margin-right:0;
+                width: 48%;
+            }
+        }
+    }
+    // REPONSIVE
+    @media screen and(max-width:767px) {
+        .content-title {
+            justify-content: center;
+        }
+        .infor-section1 {
+            flex-direction: column;
+            align-items: center;
+            .cardvisit,
+            .box1 {
+                align-self: center !important;
+                width: 100% !important;
+                max-width: 32rem;
+                margin: 2% 0;
+            }
+        }
+    }
+}
